@@ -11,34 +11,6 @@ echo
 if [ $USER != 'root' ]; then
 	echo "Sorry, for run the script please using root user"
 	exit
-fi
-echo "Okey!!! Team CCK Akan start install Panel Reseller Now "
-read -n1 -r -p "Press Enter Key To Install ..."
-echo 'UPDATE REPOSITORY'
-apt-get update
-echo 'INSTALL PACKAGE'
-#source
-source="https://raw.githubusercontent.com/cucuatok93/cucunenek/master"
-apt-get --assume-yes install libxml-parser-perl
-apt-get --assume-yes install nginx php5 php5-fpm php5-cli php5-mysql php5-mcrypt
-wget $source/mysql.sh && chmod +x mysql.sh && ./mysql.sh
-wget $source/mysql_secure.sh && chmod +x mysql_secure.sh && ./mysql_secure.sh
-clear
-echo 'REMOVE AND ADD NEW OBJECT'
-useradd -m vps
-mkdir -p /home/vps/public_html
-chown -R mysql:mysql /var/lib/mysql/
-chmod -R 755 /var/lib/mysql/
-rm /etc/nginx/sites-enabled/default
-rm /etc/nginx/sites-available/default
-wget -O /etc/nginx/nginx.conf "$source/nginx.conf"
-echo "<?php phpinfo(); ?>" > /home/vps/public_html/info.php
-wget -O /etc/nginx/conf.d/vps.conf "$source/vps.conf"
-sed -i 's/listen = \/var\/run\/php5-fpm.sock/listen = 127.0.0.1:9000/g' /etc/php5/fpm/pool.d/www.conf
-echo "<?php phpinfo() ?>" > /home/vps/public_html/info.php
-service php5-fpm restart
-service nginx restart
-clear
 
 echo ""
 echo "     Copyright 2017© Cucuatok.pe.hu"
@@ -49,6 +21,52 @@ echo -e "\e[0;34m               +60175835809"
 echo -e "\e[0;36m   =========================================\e[0;0m"       
 echo " "
 
+fi
+
+# go to root
+cd
+
+echo ""
+echo -e "\e[38;5;6m     ========================================================="
+echo -e "\e[38;5;82m     *                 AUTOSCRIPT VPS 2018                   *"
+echo -e "\e[38;5;6m     ========================================================="
+echo -e "\e[38;5;6m     *                     Contact Me                        *"
+echo -e "\e[38;5;6m     *                Channel: CuCuAtoK_TeaM                 *"
+echo -e "\e[38;5;6m     *                Whatsapp: -                            *"
+echo -e "\e[38;5;6m     *                Telegram: @Cucu_atok                   *"
+echo -e "\e[38;5;6m     ========================================================="
+echo -e "\e[38;5;6m     *                AUTOSCRIPT VPS 2018                    *"
+echo -e "\e[38;5;6m     ========================================================="
+# check registered ip
+wget -q -O IP "https://raw.githubusercontent.com/cucuatok93/cucunenek/master/IP.txt"
+if ! grep -w -q $MYIP IP; then
+	echo -e "\e[38;5;196m Maaf Bro Hanya IP terdaftar sahaja yang boleh menggunakan Autoscript ini!!!" 
+	if [[ $vps = "zvur" ]]; then
+		echo -e "\e[38;5;226m PM Telagram: https://t.me/Cucu_atok untuk dapatkan harga diskaun kaw²\e[0m"
+	else
+		echo -e "\e[38;5;226m PM Telegram: https://t.me/Cucu_atok untuk dapatkan harga diskaun kaw²\e[0m"
+	fi
+	rm -f /root/IP
+	exit
+fi
+
+ red='\e[1;31m'
+               green='\e[0;32m'
+               NC='\e[0m'
+
+               echo -e "\e[38;5;82m Connecting to Autoscript CuCu_Atok..."
+			   sleep 1
+
+			   echo -e "\e[38;5;11m Connecting to your ip : $myip ...."
+               sleep 2
+                          echo -e "\e[38;5;13m Proses ini akan mengambil masa 10-15 minit"
+		sleep 2.5	  
+			   echo -e "\e[38;5;226m IP ANDA Berjaya Di Daftarkan..."
+               sleep 1.5
+               
+			   echo -e "${green}Mula Setup...${NC}"
+               sleep 1
+	       cd
 echo " "
 echo "Do you want install webmin and openvpn ? "
 read -n1 -r -p "Press Enter Key To Continue ..."
