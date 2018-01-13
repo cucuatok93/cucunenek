@@ -11,18 +11,6 @@ echo
 if [ $USER != 'root' ]; then
 	echo "Sorry, for run the script please using root user"
 	exit
-	
-	# go to root
-	cd
-
-echo ""
-echo "     Copyright 2017© Cucuatok.pe.hu"
-echo -e "\e[0;36m    ----------------------------------------\e[0;0m"
-clear
-echo -e "\e[0;34m           SERVICE CONTACT NUMBER"
-echo -e "\e[0;34m               +60175835809"
-echo -e "\e[0;36m   =========================================\e[0;0m"       
-echo " "
 
 fi
 
