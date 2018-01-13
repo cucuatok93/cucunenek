@@ -11,6 +11,9 @@ echo
 if [ $USER != 'root' ]; then
 	echo "Sorry, for run the script please using root user"
 	exit
+	
+	# go to root
+	cd
 
 echo ""
 echo "     Copyright 2017© Cucuatok.pe.hu"
