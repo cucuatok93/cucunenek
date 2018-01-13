@@ -39,35 +39,7 @@ echo "<?php phpinfo() ?>" > /home/vps/public_html/info.php
 service php5-fpm restart
 service nginx restart
 clear
-echo 'CREATE OCS PANEL'
-apt-get --assume-yes install git
-cd /home/vps/public_html
-git init
-git remote add origin https://github.com/llxxdd/OcsPanels.git
-git pull origin master
-clear
-echo 'GIVE PERMISSION'
-chown -R www-data:www-data /home/vps/public_html
-chmod -R g+rw /home/vps/public_html
-clear
-sed -i 's/ssl=1/ssl=0/g' /etc/webmin/miniserv.conf
-php5enmod mcrypt
-rm -r /root/ocs
-clear
 
-#rip
-cd
-rm perlis.sh
-rm mysql.sh
-rm mysql_secure.sh
-rm -rf ~/.bash_history && history -c
-clear
-
-echo ""
-echo ""
-echo ""
-echo ""
-echo ""
 echo ""
 echo "     Copyright 2017© Cucuatok.pe.hu"
 echo -e "\e[0;36m    ----------------------------------------\e[0;0m"
@@ -76,19 +48,7 @@ echo -e "\e[0;34m           SERVICE CONTACT NUMBER"
 echo -e "\e[0;34m               +60175835809"
 echo -e "\e[0;36m   =========================================\e[0;0m"       
 echo " "
-echo -e "\e[0;35m    >>>>> Login Panel By Your IP Only <<<<<\e[0;0m"
-echo ""
-echo "            Database Host: localhost"
-echo ""
-echo "            Database Name: OCS_PANEL"
-echo ""
-echo "            Database User: root"
-echo ""
-echo "            Database Pass: abc12345"
-echo ""
-echo -e "\e[0;36m =============================================\e[0;0m"
-echo -e "\e[0;31m Setting Panel reseller before start next step\e[0;0m"
-echo " "
+
 echo " "
 echo "Do you want install webmin and openvpn ? "
 read -n1 -r -p "Press Enter Key To Continue ..."
