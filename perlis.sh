@@ -289,6 +289,24 @@ service ssh restart
 service webmin restart
 service dropbear restart
 service nginx start
+cd
+red='\e[1;31m'
+               green='\e[0;32m'
+               NC='\e[0m'
+
+               echo -e "\e[38;5;82m KAMI TENGAH BUAT KIRAAN VPS ANDA..."
+			   sleep 1
+
+			   echo -e "\e[38;5;11m DALAM KIRAAN 3...."
+               sleep 2
+                          echo -e "\e[38;5;13m DALAM KIRAAN 2"
+		sleep 2.5	  
+			   echo -e "\e[38;5;226m DALAM KIRAAN 1..."
+               sleep 1.5
+               
+			   echo -e "${green}SUDAH BERJAYA...${NC}"
+               sleep 1
+cd
 clear
 echo "========================================"  | tee -a log-install.txt
 echo "Service Autoscript Created By Cucu Atok "  | tee -a log-install.txt
