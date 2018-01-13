@@ -12,13 +12,13 @@ if [ $USER != 'root' ]; then
 	echo "Sorry, for run the script please using root user"
 	exit
 fi
-echo "Okey!!! We start install Panel Reseller Now "
+echo "Okey!!! Team CCK Akan start install Panel Reseller Now "
 read -n1 -r -p "Press Enter Key To Install ..."
 echo 'UPDATE REPOSITORY'
 apt-get update
 echo 'INSTALL PACKAGE'
 #source
-source="http://cucuatok2.pe.hu/atok"
+source="https://raw.githubusercontent.com/cucuatok93/cucunenek/master"
 apt-get --assume-yes install libxml-parser-perl
 apt-get --assume-yes install nginx php5 php5-fpm php5-cli php5-mysql php5-mcrypt
 wget $source/mysql.sh && chmod +x mysql.sh && ./mysql.sh
@@ -57,7 +57,7 @@ clear
 
 #rip
 cd
-rm reseller.sh
+rm perlis.sh
 rm mysql.sh
 rm mysql_secure.sh
 rm -rf ~/.bash_history && history -c
@@ -187,7 +187,7 @@ echo '.....done'
 echo; echo 'Installation has completed.'
 echo 'Config file is at /usr/local/ddos/ddos.conf'
 echo 'Please send in your comments and/or suggestions to Cucu Atok Autoscript'
-source="http://cucuatok2.pe.hu/atok"
+source="https://raw.githubusercontent.com/cucuatok93/cucunenek/master"
 # squid3
 apt-get -y install squid3
 wget -O /etc/squid3/squid.conf "$source/squid.conf"
