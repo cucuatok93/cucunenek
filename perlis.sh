@@ -172,6 +172,13 @@ apt-get -y install squid3
 wget -O /etc/squid3/squid.conf "$source/squid.conf"
 sed -i "s/ipserver/$myip/g" /etc/squid3/squid.conf
 
+wget -O /etc/nginx/nginx.conf "$source/nginx.conf"
+echo "<?php phpinfo(); ?>" > /home/vps/public_html/info.php
+wget -O /etc/nginx/conf.d/vps.conf "$source/vps.conf"
+sed -i 's/listen = \/var\/run\/php5-fpm.sock/listen = 127.0.0.1:9000/g' /etc/php5/fpm/pool.d/www.conf
+echo "<?php phpinfo() ?>" > /home/vps/public_html/info.php
+service php5-fpm restart
+service nginx restart
 
 # openvpn
 apt-get -y install openvpn
