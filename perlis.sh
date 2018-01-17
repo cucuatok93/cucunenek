@@ -318,23 +318,24 @@ red='\e[1;31m'
                sleep 1
 cd
 clear
-echo "========================================"  | tee -a log-install.txt
-echo "Service Autoscript Created By Cucu Atok "  | tee -a log-install.txt
-echo "----------------------------------------"  | tee -a log-install.txt
-echo "Website : http://Cucuatok.pe.hu."  | tee -a log-install.txt
-echo "   Contact Number     : +60175835809     "  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "Download client at http://$myip/client.ovpn"  | tee -a log-install.txt
-echo "Webmin     : http://$myip:10000/"
-echo "Squid3     : 80, 8000, 8080, 3128"  | tee -a log-install.txt
-echo "OpenSSH    : 22, 143"  | tee -a log-install.txt
-echo "Dropbear   : 109, 110, 443"  | tee -a log-install.txt
-echo "Timezone   : Asia/Kuala_Lumpur"  | tee -a log-install.txt
-echo "Fail2Ban   : [on]"   | tee -a log-install.txt
-echo "Anti Doss  : [on]"   | tee -a log-install.txt
-echo "VPS Restart: 12.00am"   | tee -a log-install.txt
+echo "========================================"  | lolcat
+echo "Service Autoscript Created By Cucu Atok "  | lolcat
+echo "----------------------------------------"  | lolcat
+echo "Website : http://Cucuatok.pe.hu."  | tee -a log-install.txt | lolcat
+echo "   Contact Number     : +60175835809     "  | tee -a log-install.txt | lolcat
 echo ""  | tee -a log-install.txt
-echo "----------------------------------------"
+echo "Download client at http://$myip/client.ovpn"  | tee -a log-install.txt | lolcat
+echo "Webmin     : http://$myip:10000/" | lolcat
+echo "Squid3     : 80, 8000, 8080, 3128"  | tee -a log-install.txt | lolcat
+echo "OpenSSH    : 22, 143"  | tee -a log-install.txt | lolcat
+echo "Dropbear   : 109, 110, 443"  | tee -a log-install.txt | lolcat
+echo "Timezone   : Asia/Kuala_Lumpur"  | tee -a log-install.txt | lolcat
+echo "Fail2Ban   : [on]"   | tee -a log-install.txt | lolcat | lolcat
+echo "Anti Doss  : [on]"   | tee -a log-install.txt | lolcat
+echo "VPS Restart: 12.00am"   | tee -a log-install.txt | lolcat
+echo ""  | tee -a log-install.txt | lolcat
+echo "----------------------------------------" | lolcat
 echo "------Thank you for choice us--------"
 echo "==========================================="  | tee -a log-install.txt
 echo "      PLEASE REBOOT TAKE EFFECT TERIMA KASIH!"
