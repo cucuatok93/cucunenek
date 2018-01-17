@@ -273,9 +273,10 @@ biar user senang boleh multilogin lagi.." | boxes -d boy | lolcat
 	clear
 	echo "AUTO KILL LOGIN,SUDAH SAYA OFF KAN BOS 
 User Sudah Boleh Multi Login Lagi!!!" | boxes -d boy | lolcat
-	break
-		
-        23)
+	break			
+	;;
+	
+	23)
 		clear
 		exit
 		;;
