@@ -23,21 +23,24 @@ do
 
 	clear
     echo ""
-	echo -e "\e[0;36m------------------- Welcome To CuCu AtoK Autoscript -------------------\e[0;0m"
-	echo -e "\e[0;31m                      :ID TeLeGraM: @CuCu_Atok "
+	echo -e "\e[0;36m------------------- Welcome To CuCu AtoK Autoscript -------------------\e[0;0m" | lolcat
+	echo -e "\e[0;31m                      :ID TeLeGraM: @CuCu_Atok " | lolcat
     echo ""
-	cname=$( awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo )
-	cores=$( awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo )
-	freq=$( awk -F: ' /cpu MHz/ {freq=$2} END {print freq}' /proc/cpuinfo )
-	tram=$( free -m | awk 'NR==2 {print $2}' )
-	swap=$( free -m | awk 'NR==4 {print $2}' )
-	up=$(uptime|awk '{ $1=$2=$(NF-6)=$(NF-5)=$(NF-4)=$(NF-3)=$(NF-2)=$(NF-1)=$NF=""; print }')
-	echo -e "\e[0;33mCPU model             :\e[32m $cname"
-	echo -e "\e[0;33mNumber of cores       : \e[32m $cores"
-	echo -e "\e[0;33mCPU frequency         :\e[32m $freq MHz"
-	echo -e "\e[0;33mTotal amount of ram   : \e[32m $tram MB"
-	echo -e "\e[0;33mTotal amount of swap  : \e[32m $swap MB"
-	echo -e "\e[0;33mSystem uptime         :\e[32m$up"
+	cname=$( awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo ) | lolcat
+	cores=$( awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo ) | lolcat
+	freq=$( awk -F: ' /cpu MHz/ {freq=$2} END {print freq}' /proc/cpuinfo ) | lolcat
+	tram=$( free -m | awk 'NR==2 {print $2}' ) | lolcat
+	swap=$( free -m | awk 'NR==4 {print $2}' ) | lolcat
+	up=$(uptime|awk '{ $1=$2=$(NF-6)=$(NF-5)=$(NF-4)=$(NF-3)=$(NF-2)=$(NF-1)=$NF=""; print }') | lolcat
+	echo -e "\e[0;33mCPU model             :\e[32m $cname" | lolcat
+	echo -e "\e[0;33mNumber of cores       : \e[32m $cores" | lolcat
+	echo -e "\e[0;33mCPU frequency         :\e[32m $freq MHz" | lolcat
+	echo -e "\e[0;33mTotal amount of ram   : \e[32m $tram MB" | lolcat
+	echo -e "\e[0;33mTotal amount of swap  : \e[32m $swap MB" | lolcat
+	echo -e "\e[0;33mSystem uptime         :\e[32m$up" | lolcat
+	echo "                       Server: $MYIP"| lolcat
+date +"                        %A, %d-%m-%Y"| lolcat
+date +"                           %H:%M:%S %Z"| lolcat
     echo ""
 	echo -e "\e[0;36m------------------------------------------------------------------------\e[0;0m"
 	echo "                     Please Type 'menu' After Each Mission "
@@ -63,6 +66,8 @@ do
     echo -e "\e[0;35m18)\e[0m Change root password                     (vps-password change)"
     echo -e "\e[0;35m19)\e[0m Buy Autoscript                           (order autoscript)"
     echo -e "\e[0;35m20)\e[0m Reboot Server                            (reboot)"
+    echo -e "\e[0;35m20)\e[0m (ON) Auto Kill Multi Login")             (on autokill)
+    echo -e "\e[0;35m20)\e[0m (OFF) Auto Kill Multi Login")             (off autokill)
 	echo -e "\e[0;35m21)\e[0m Exit                                     (Back)"	
 	echo ""
 	read -p "Select an option from [1-21] than press ENTER: " option1
@@ -218,7 +223,59 @@ Setup Rm30/ip, Rm100 VPS full autoscript.
         reboot
 		exit
 		;;
-        21)
+		
+	21)
+	
+	clear 
+	read -p "please fill in maximal user login (1-2): " MULTILOGIN2
+	#echo "@reboot root /root/userlimit.sh" > /etc/cron.d/userlimitreboot
+	service cron stop
+	echo "* * * * * root /usr/bin/userlimit.sh $MULTILOGIN2" > /etc/cron.d/userlimit1
+	   echo "* * * * * root sleep 10; /usr/bin/userlimit.sh $MULTILOGIN2" > /etc/cron.d/userlimit2
+           echo "* * * * * root sleep 20; /usr/bin/userlimit.sh $MULTILOGIN2" > /etc/cron.d/userlimit3
+           echo "* * * * * root sleep 30; /usr/bin/userlimit.sh $MULTILOGIN2" > /etc/cron.d/userlimit4
+           echo "* * * * * root sleep 40; /usr/bin/userlimit.sh $MULTILOGIN2" > /etc/cron.d/userlimit5
+           echo "* * * * * root sleep 50; /usr/bin/userlimit.sh $MULTILOGIN2" > /etc/cron.d/userlimit6
+	   #:echo "@reboot root /root/userlimitssh.sh" >> /etc/cron.d/userlimitreboot
+	   echo "* * * * * root /usr/bin/userlimitssh.sh $MULTILOGIN2" >> /etc/cron.d/userlimit1
+	   echo "* * * * * root sleep 11; /usr/bin/userlimitssh.sh $MULTILOGIN2" >> /etc/cron.d/userlimit2
+           echo "* * * * * root sleep 21; /usr/bin/userlimitssh.sh $MULTILOGIN2" >> /etc/cron.d/userlimit3
+           echo "* * * * * root sleep 31; /usr/bin/userlimitssh.sh $MULTILOGIN2" >> /etc/cron.d/userlimit4
+           echo "* * * * * root sleep 41; /usr/bin/userlimitssh.sh $MULTILOGIN2" >> /etc/cron.d/userlimit5
+           echo "* * * * * root sleep 51; /usr/bin/userlimitssh.sh $MULTILOGIN2" >> /etc/cron.d/userlimit6
+	    service cron start
+	    service cron restart
+	    service ssh restart
+	    service dropbear restart
+	    echo "------------+ AUTO KILL SUDAH DI AKTIFKAN BOSS +--------------" | lolcat
+	    
+	echo "Dasar Kedekut!!! Kalau User Marah Marah Jangan Salah Kan Saya Ya Bos¡¡¡
+nanti jangan lupa di off boss
+biar user senang boleh multilogin lagi.." | boxes -d boy | lolcat
+	break
+	;;
+	
+	22)
+	
+	clear
+	service cron stop
+	rm -rf /etc/cron.d/userlimit1
+	rm -rf /etc/cron.d/userlimit2
+	rm -rf /etc/cron.d/userlimit3
+	rm -rf /etc/cron.d/userlimit4
+	rm -rf /etc/cron.d/userlimit5
+	rm -rf /etc/cron.d/userlimit6
+	#rm -rf /etc/cron.d/userlimitreboot
+	service cron start
+	service cron restart
+	    service ssh restart
+	    service dropbear restart
+	clear
+	echo "AUTO KILL LOGIN,SUDAH SAYA OFF KAN BOS 
+User Sudah Boleh Multi Login Lagi!!!" | boxes -d boy | lolcat
+	break
+		
+        23)
 		clear
 		exit
 		;;
