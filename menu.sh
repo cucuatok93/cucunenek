@@ -66,8 +66,8 @@ date +"                           %H:%M:%S %Z"| lolcat
     echo -e "\e[0;35m18)\e[0m Change root password                     (vps-password change)"
     echo -e "\e[0;35m19)\e[0m Buy Autoscript                           (order autoscript)"
     echo -e "\e[0;35m20)\e[0m Reboot Server                            (reboot)"
-    echo -e "\e[0;35m21)\e[0m (ON) Auto Kill Multi Login             (on autokill)"
-    echo -e "\e[0;35m22)\e[0m (OFF) Auto Kill Multi Login           (off autokill)"
+    echo -e "\e[0;35m21)\e[0m (ON) Auto Kill Multi Login               (on autokill)"
+    echo -e "\e[0;35m22)\e[0m (OFF) Auto Kill Multi Login              (off autokill)"
 	echo -e "\e[0;35m23)\e[0m Exit                                     (Back)"	
 	echo ""
 	read -p "Select an option from [1-21] than press ENTER: " option1
