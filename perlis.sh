@@ -220,7 +220,17 @@ sed -i 's/ssl=1/ssl=0/g' /etc/webmin/miniserv.conf
 service webmin restart
 service vnstat restart
 
+# text gambar
+apt-get install boxes
 
+# color text
+cd
+rm -rf /root/.bashrc
+wget -O /root/.bashrc "https://raw.githubusercontent.com/cucuatok93/cucunenek/tools/master/.bashrc"
+
+# install lolcat
+sudo apt-get -y install ruby
+sudo gem install lolcat
 
 # install pptp vpn
 wget $source/pptp.sh
