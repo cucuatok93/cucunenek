@@ -273,6 +273,8 @@ wget -O /usr/bin/user-limit $source/user-limit.sh
 wget -O /usr/bin/ps-mem $source/ps_mem.py
 wget -O /usr/bin/speedtest $source/speedtest_cli.py
 wget -O /usr/bin/benchmark $source/benchmark.sh
+wget -O /usr/bin/banned-user $source/banned-user.sh
+wget -O /usr/bin/unbanned-user $source/unbanned-user.sh
 
 chmod +x /usr/bin/menu
 chmod +x /usr/bin/user-add
@@ -289,6 +291,8 @@ chmod +x /usr/bin/user-limit
 chmod +x /usr/bin/ps-mem
 chmod +x /usr/bin/speedtest
 chmod +x /usr/bin/benchmark
+chmod +x /usr/bin/banned
+chmod +x /usr/bin/unbanned
 echo "0 0 * * * root /usr/bin/user-expire" > /etc/cron.d/user-expire
 echo "0 */12 * * * root /sbin/reboot" > /etc/cron.d/reboot
 echo "* * * * * service dropbear restart" > /etc/cron.d/dropbear
