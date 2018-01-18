@@ -23,8 +23,8 @@ do
 
 	clear
     echo ""
-	echo -e "\e[0;36m------------------- Welcome To CuCu AtoK Autoscript -------------------\e[0;0m" | lolcat
-	echo -e "\e[0;31m                      :ID TeLeGraM: @CuCu_Atok " | lolcat
+	echo "------------------- Welcome To CuCu AtoK Autoscript ------------------- | lolcat
+	echo "                      :ID TeLeGraM: @CuCu_Atok " | lolcat
     echo ""
 	cname=$( awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo ) | lolcat
 	cores=$( awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo ) | lolcat
@@ -32,12 +32,12 @@ do
 	tram=$( free -m | awk 'NR==2 {print $2}' ) | lolcat
 	swap=$( free -m | awk 'NR==4 {print $2}' ) | lolcat
 	up=$(uptime|awk '{ $1=$2=$(NF-6)=$(NF-5)=$(NF-4)=$(NF-3)=$(NF-2)=$(NF-1)=$NF=""; print }') | lolcat
-	echo -e "\e[0;33mCPU model             :\e[32m $cname" | lolcat
-	echo -e "\e[0;33mNumber of cores       : \e[32m $cores" | lolcat
-	echo -e "\e[0;33mCPU frequency         :\e[32m $freq MHz" | lolcat
-	echo -e "\e[0;33mTotal amount of ram   : \e[32m $tram MB" | lolcat
-	echo -e "\e[0;33mTotal amount of swap  : \e[32m $swap MB" | lolcat
-	echo -e "\e[0;33mSystem uptime         :\e[32m$up" | lolcat
+	echo "CPU model             : $cname" | lolcat
+	echo "Number of cores       : $cores" | lolcat
+	echo "CPU frequency         : $freq MHz" | lolcat
+	echo "Total amount of ram   : $tram MB" | lolcat
+	echo "Total amount of swap  : $swap MB" | lolcat
+	echo "System uptime         : $up" | lolcat
 	echo "                       Server: $MYIP"| lolcat
 date +"                        %A, %d-%m-%Y"| lolcat
 date +"                           %H:%M:%S %Z"| lolcat
