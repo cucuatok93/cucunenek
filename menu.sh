@@ -23,49 +23,49 @@ do
 
 	clear
     echo ""
-	echo "------------------- Welcome To CuCu AtoK Autoscript ------------------- | lolcat
-	echo "                      :ID TeLeGraM: @CuCu_Atok " | lolcat
+	echo -e "\e[0;36m------------------- Welcome CuCu_AtoK Autoscript -------------------\e[0;0m"| lolcat
+	echo -e "\e[0;31m                      Your Server IP: $MYIP "| lolcat
     echo ""
-	cname=$( awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo ) | lolcat
-	cores=$( awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo ) | lolcat
-	freq=$( awk -F: ' /cpu MHz/ {freq=$2} END {print freq}' /proc/cpuinfo ) | lolcat
-	tram=$( free -m | awk 'NR==2 {print $2}' ) | lolcat
-	swap=$( free -m | awk 'NR==4 {print $2}' ) | lolcat
-	up=$(uptime|awk '{ $1=$2=$(NF-6)=$(NF-5)=$(NF-4)=$(NF-3)=$(NF-2)=$(NF-1)=$NF=""; print }') | lolcat
-	echo "CPU model             : $cname" | lolcat
-	echo "Number of cores       : $cores" | lolcat
-	echo "CPU frequency         : $freq MHz" | lolcat
-	echo "Total amount of ram   : $tram MB" | lolcat
-	echo "Total amount of swap  : $swap MB" | lolcat
-	echo "System uptime         : $up" | lolcat
+	cname=$( awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo )
+	cores=$( awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo )
+	freq=$( awk -F: ' /cpu MHz/ {freq=$2} END {print freq}' /proc/cpuinfo )
+	tram=$( free -m | awk 'NR==2 {print $2}' )
+	swap=$( free -m | awk 'NR==4 {print $2}' )
+	up=$(uptime|awk '{ $1=$2=$(NF-6)=$(NF-5)=$(NF-4)=$(NF-3)=$(NF-2)=$(NF-1)=$NF=""; print }')
+	echo -e "\e[0;33mCPU model             :\e[32m $cname"| lolcat
+	echo -e "\e[0;33mNumber of cores       : \e[32m $cores"| lolcat
+	echo -e "\e[0;33mCPU frequency         :\e[32m $freq MHz"| lolcat
+	echo -e "\e[0;33mTotal amount of ram   : \e[32m $tram MB"| lolcat
+	echo -e "\e[0;33mTotal amount of swap  : \e[32m $swap MB"| lolcat
+	echo -e "\e[0;33mSystem uptime         :\e[32m$up"
 	echo "                       Server: $MYIP"| lolcat
 date +"                        %A, %d-%m-%Y"| lolcat
 date +"                           %H:%M:%S %Z"| lolcat
     echo ""
-	echo -e "\e[0;36m------------------------------------------------------------------------\e[0;0m"
+	echo -e "\e[0;36m------------------------------------------------------------------------\e[0;0m"| lolcat
 	echo "                     Please Type 'menu' After Each Mission "
-    echo -e "\e[0;36m------------------------------------------------------------------------\e[0;0m"
+    echo -e "\e[0;36m------------------------------------------------------------------------\e[0;0m"| lolcat
     echo ""
-	echo -e "\e[0;35m 1)\e[0m Create new user                          (name, pass, days)" | lolcat
-    echo -e "\e[0;35m 2)\e[0m User renew                               (name, days extend)" | lolcat
-	echo -e "\e[0;35m 3)\e[0m User password change                     (change pass of user)" | lolcat
-	echo -e "\e[0;35m 4)\e[0m User delete                              (delete account)" | lolcat
-    echo -e "\e[0;35m 5)\e[0m User details                             (user-list)" | lolcat
-    echo -e "\e[0;35m 6)\e[0m Check user expire                        (user-expire-list)" | lolcat
-    echo -e "\e[0;35m 7)\e[0m Generate new user                        (quick create user-pass)" | lolcat
-	echo -e "\e[0;35m 8)\e[0m Create account PPTP VPN                  (user-add-pptp)" | lolcat
-	echo -e "\e[0;35m 9)\e[0m Monitoring Dropbear                      (dropmon by port)" | lolcat
-	echo -e "\e[0;35m10)\e[0m Check Login Dropbear, SSH, VPN, PPTP     (user-login)" | lolcat
-	echo -e "\e[0;35m11)\e[0m Kill Multi Login Manual (1 or 2 Login)   (user-limit)" | lolcat
-	echo -e "\e[0;35m12)\e[0m Restart Dropbear                         (service dropbear restart)" | lolcat
-	echo -e "\e[0;35m13)\e[0m Memory Usage                             (ram-usage)" | lolcat
-	echo -e "\e[0;35m14)\e[0m Speedtest                                (speedtest)" | lolcat
-	echo -e "\e[0;35m15)\e[0m Benchmark                                (benchmark)" | lolcat
-    echo -e "\e[0;35m16)\e[0m Update script                            (check new cript)" | lolcat
-    echo -e "\e[0;35m17)\e[0m Download client                          (client config)" | lolcat
-    echo -e "\e[0;35m18)\e[0m Change root password                     (vps-password change)" | lolcat
-    echo -e "\e[0;35m19)\e[0m Buy Autoscript                           (order autoscript)" | lolcat
-    echo -e "\e[0;35m20)\e[0m Reboot Server                            (reboot)" | lolcat
+	echo -e "\e[0;35m 1)\e[0m Create new user                          (name, pass, days)"
+    echo -e "\e[0;35m 2)\e[0m User renew                               (name, days extend)"
+	echo -e "\e[0;35m 3)\e[0m User password change                     (change pass of user)"
+	echo -e "\e[0;35m 4)\e[0m User delete                              (delete account)"
+    echo -e "\e[0;35m 5)\e[0m User details                             (user-list)"
+    echo -e "\e[0;35m 6)\e[0m Check user expire                        (user-expire-list)"
+    echo -e "\e[0;35m 7)\e[0m Generate new user                        (quick create user-pass)"
+	echo -e "\e[0;35m 8)\e[0m Create account PPTP VPN                  (user-add-pptp)"
+	echo -e "\e[0;35m 9)\e[0m Monitoring Dropbear                      (dropmon by port)"
+	echo -e "\e[0;35m10)\e[0m Check Login Dropbear, SSH, VPN, PPTP     (user-login)"
+	echo -e "\e[0;35m11)\e[0m Kill Multi Login Manual (1 or 2 Login)   (user-limit)"
+	echo -e "\e[0;35m12)\e[0m Restart Dropbear                         (service dropbear restart)"
+	echo -e "\e[0;35m13)\e[0m Memory Usage                             (ram-usage)"
+	echo -e "\e[0;35m14)\e[0m Speedtest                                (speedtest)"
+	echo -e "\e[0;35m15)\e[0m Benchmark                                (benchmark)"
+    echo -e "\e[0;35m16)\e[0m Update script                            (check new cript)"
+    echo -e "\e[0;35m17)\e[0m Download client                          (client config)"
+    echo -e "\e[0;35m18)\e[0m Change root password                     (vps-password change)"
+    echo -e "\e[0;35m19)\e[0m Buy Autoscript                           (order autoscript)"
+    echo -e "\e[0;35m20)\e[0m Reboot Server                            (reboot)"
     echo -e "\e[0;35m21)\e[0m (ON) Auto Kill Multi Login               (on autokill)" | lolcat
     echo -e "\e[0;35m22)\e[0m (OFF) Auto Kill Multi Login              (off autokill)" | lolcat
 	echo -e "\e[0;35m23)\e[0m Exit                                     (Back)" | lolcat
