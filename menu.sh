@@ -43,34 +43,34 @@ date +"                        %A, %d-%m-%Y"| lolcat
 date +"                           %H:%M:%S %Z"| lolcat
     echo ""
 	echo -e "\e[0;36m------------------------------------------------------------------------\e[0;0m"| lolcat
-	echo "                     Please Type 'menu' After Each Mission "
+	echo "                     Please Type 'menu' After Each Mission "| lolcat
     echo -e "\e[0;36m------------------------------------------------------------------------\e[0;0m"| lolcat
     echo ""
-	echo -e "\e[0;35m 1)\e[0m Create new user                          (name, pass, days)"
+	echo -e "\e[0;35m 1)\e[0m Create new user                          (name, pass, days)" | lolcat
     echo -e "\e[0;35m 2)\e[0m User renew                               (name, days extend)"
-	echo -e "\e[0;35m 3)\e[0m User password change                     (change pass of user)"
-	echo -e "\e[0;35m 4)\e[0m User delete                              (delete account)"
-    echo -e "\e[0;35m 5)\e[0m User details                             (user-list)"
-    echo -e "\e[0;35m 6)\e[0m Check user expire                        (user-expire-list)"
-    echo -e "\e[0;35m 7)\e[0m Generate new user                        (quick create user-pass)"
-	echo -e "\e[0;35m 8)\e[0m Create account PPTP VPN                  (user-add-pptp)"
-	echo -e "\e[0;35m 9)\e[0m Monitoring Dropbear                      (dropmon by port)"
-	echo -e "\e[0;35m10)\e[0m Check Login Dropbear, SSH, VPN, PPTP     (user-login)"
-	echo -e "\e[0;35m11)\e[0m Kill Multi Login Manual (1 or 2 Login)   (user-limit)"
-	echo -e "\e[0;35m12)\e[0m Restart Dropbear                         (service dropbear restart)"
-	echo -e "\e[0;35m13)\e[0m Memory Usage                             (ram-usage)"
-	echo -e "\e[0;35m14)\e[0m Speedtest                                (speedtest)"
-	echo -e "\e[0;35m15)\e[0m Benchmark                                (benchmark)"
-    echo -e "\e[0;35m16)\e[0m Update script                            (check new cript)"
-    echo -e "\e[0;35m17)\e[0m Download client                          (client config)"
-    echo -e "\e[0;35m18)\e[0m Change root password                     (vps-password change)"
-    echo -e "\e[0;35m19)\e[0m Buy Autoscript                           (order autoscript)"
-    echo -e "\e[0;35m20)\e[0m Reboot Server                            (reboot)"
+	echo -e "\e[0;35m 3)\e[0m User password change                     (change pass of user)" | lolcat
+	echo -e "\e[0;35m 4)\e[0m User delete                              (delete account)" | lolcat
+    echo -e "\e[0;35m 5)\e[0m User details                             (user-list)"| lolcat
+    echo -e "\e[0;35m 6)\e[0m Check user expire                        (user-expire-list)"| lolcat
+    echo -e "\e[0;35m 7)\e[0m Generate new user                        (quick create user-pass)"| lolcat
+	echo -e "\e[0;35m 8)\e[0m Create account PPTP VPN                  (user-add-pptp)"| lolcat
+	echo -e "\e[0;35m 9)\e[0m Monitoring Dropbear                      (dropmon by port)"| lolcat
+	echo -e "\e[0;35m10)\e[0m Check Login Dropbear, SSH, VPN, PPTP     (user-login)"| lolcat
+	echo -e "\e[0;35m11)\e[0m Kill Multi Login Manual (1 or 2 Login)   (user-limit)"| lolcat
+	echo -e "\e[0;35m12)\e[0m Restart Dropbear                         (service dropbear restart)"| lolcat
+	echo -e "\e[0;35m13)\e[0m Memory Usage                             (ram-usage)"| lolcat
+	echo -e "\e[0;35m14)\e[0m Speedtest                                (speedtest)"| lolcat
+	echo -e "\e[0;35m15)\e[0m Benchmark                                (benchmark)"| lolcat
+    echo -e "\e[0;35m16)\e[0m Update script                            (check new cript)"| lolcat
+    echo -e "\e[0;35m17)\e[0m Download client                          (client config)"| lolcat
+    echo -e "\e[0;35m18)\e[0m Change root password                     (vps-password change)"| lolcat
+    echo -e "\e[0;35m19)\e[0m Buy Autoscript                           (order autoscript)"| lolcat
+    echo -e "\e[0;35m20)\e[0m Reboot Server                            (reboot)"| lolcat
     echo -e "\e[0;35m21)\e[0m (ON) Auto Kill Multi Login               (on autokill)" | lolcat
     echo -e "\e[0;35m22)\e[0m (OFF) Auto Kill Multi Login              (off autokill)" | lolcat
 	echo -e "\e[0;35m23)\e[0m Exit                                     (Back)" | lolcat
 	echo ""
-	read -p "Select an option from [1-21] than press ENTER: " option1
+	read -p "Select an option from [1-21] than press ENTER: " option1| lolcat
 	case $option1 in
 		1)
 		clear
@@ -192,34 +192,34 @@ THANK YOU
         19)
 		clear
         echo -e "\e[0;36m
--------------------- WELCOME @_@ ----------------\e[0;0m"
+-------------------- WELCOME @_@ ----------------\e[0;0m"| lolcat
     echo ""
         echo -e "\e[0;33m
-CUCU_ATOK AUTOSCRIPT (Centos-Debian-Ubuntu)
-Tel :+60175835809 Sms/whatsapp/telegram 
-http://Panel.cucuatok.jumpingcrab.com
-http://telegram.me/CuCu_Atok
+CUCU_ATOK AUTOSCRIPT (Centos-Debian-Ubuntu)| lolcat
+Tel :+60175835809 Sms/whatsapp/telegram | lolcat
+http://Panel.cucuatok.jumpingcrab.com| lolcat
+http://telegram.me/CuCu_Atok| lolcat
 \e[0;0m"
         echo -e "\e[0;36m
--------------------------------------------------
-Vps setup Panel reseller, Webmin, Openvpn    
-Script for sell: Centos, Debian, Ubuntu
-Panel reseller, Webmin, Openvpn, Proxy, Dropbear 
--------------------------------------------------
+-------------------------------------------------| lolcat
+Vps setup Panel reseller, Webmin, Openvpn    | lolcat
+Script for sell: Centos, Debian, Ubuntu| lolcat
+Panel reseller, Webmin, Openvpn, Proxy, Dropbear | lolcat
+-------------------------------------------------| lolcat
 \e[0;0m" 
        echo -e "\e[0;35m 
-PAYMENT OPTIONS
-Maybank:159013087957 HAFIEZAN ABD HAMID
+PAYMENT OPTIONS| lolcat
+Maybank:159013087957 HAFIEZAN ABD HAMID| lolcat
  \e[0;0m"
    echo -e "\e[0;34m 
-Price list
-Setup Rm30/ip, Rm100 VPS full autoscript.
+Price list| lolcat
+Setup Rm30/ip, Rm100 VPS full autoscript.| lolcat
                \e[0;0m"
 		exit
 		;;
        20)
 		clear
-        echo -e "\e[0;31m The system going to reboot NOW.......  \e[0;0m"
+        echo -e "\e[0;31m The system going to reboot NOW.......  \e[0;0m"| lolcat
         reboot
 		exit
 		;;
@@ -249,9 +249,8 @@ Setup Rm30/ip, Rm100 VPS full autoscript.
 	    service dropbear restart
 	    echo "------------+ AUTO KILL SUDAH DI AKTIFKAN BOSS +--------------" | lolcat
 	    
-	echo "Dasar Kedekut!!! Kalau User Marah Marah Jangan Salah Kan Saya Ya Bos¡¡¡
-nanti jangan lupa di off boss
-biar user senang boleh multilogin lagi.." | boxes -d boy | lolcat
+	echo "SUDAH AKTIF!!! Kalau User Marah Marah Jangan Salah Kan Saya Ya Bos¡¡¡
+Terima kasih yea bro.." | boxes -d boy | lolcat
 	break
 	;;
 	
