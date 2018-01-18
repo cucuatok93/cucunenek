@@ -43,12 +43,12 @@ read -p "Isikan username: " username
 egrep "^$username" /etc/passwd >/dev/null
 if [ $? -eq 0 ]; then
 	echo ""
-	read -p "Apakah Anda benar-benar ingin mem-banned akun [$username] [y/n]: " -e -i y BANNED
+	read -p "Apakah Anda benar-benar ingin mem-banned akaun [$username] [y/n]: " -e -i y BANNED
 	if [[ "$BANNED" = 'y' ]]; then
 		echo " User : $username" >> /root/banneduser.txt
 		passwd -l $username
 		echo ""
-		echo "Akun [$username] berhasil dibanned!"
+		echo "Akun [$username] Sudah dibanned!"
 	else
 		echo ""
 		echo "Banned akun [$username] dibatalkan!"
