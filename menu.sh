@@ -68,7 +68,9 @@ date +"                           %H:%M:%S %Z"| lolcat
     echo -e "\e[0;35m20)\e[0m Reboot Server                            (reboot)"
     echo -e "\e[0;35m21)\e[0m (ON) Auto Kill Multi Login               (on autokill)"
     echo -e "\e[0;35m22)\e[0m (OFF) Auto Kill Multi Login              (off autokill)"
-	echo -e "\e[0;35m23)\e[0m Exit                                     (Back)"
+    echo -e "\e[0;35m23)\e[0m User Banned Multilogin              (banned user)"
+     echo -e "\e[0;35m24)\e[0m User Unbanned Multilogin              (unbanned user)"
+	echo -e "\e[0;35m25)\e[0m Exit                                     (Back)"
 	echo ""
 	read -p "Select an option from [1-21] than press ENTER: " option1| lolcat
 	case $option1 in
@@ -272,10 +274,25 @@ Terima kasih yea bro.." | boxes -d boy | lolcat
 	clear
 	echo "AUTO KILL LOGIN,SUDAH SAYA OFF KAN BOS 
 User Sudah Boleh Multi Login Lagi!!!" | boxes -d boy | lolcat
-	break			
+	break	
 	;;
 	
 	23)
+	
+	"Banned User")
+	clear
+	banned-user
+	break
+	;;
+	
+	24)
+	"Unbanned User")
+	clear
+	unbanned-user
+	break
+	;;
+	
+	25)
 		clear
 		exit
 		;;
