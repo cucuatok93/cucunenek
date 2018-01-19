@@ -72,7 +72,7 @@ date +"                           %H:%M:%S %Z"| lolcat
      echo -e "\e[0;35m24)\e[0m User Unbanned Multilogin                (unbanned user)"
 	echo -e "\e[0;35m25)\e[0m Exit                                     (Back)"
 	echo ""
-	read -p "Select an option from [1-25] than press ENTER: " option1| lolcat
+	read -p "Select an option from [1-25] than press ENTER: " option1
 	case $option1 in
 		1)
 		clear
