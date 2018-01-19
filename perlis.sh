@@ -291,8 +291,8 @@ chmod +x /usr/bin/user-limit
 chmod +x /usr/bin/ps-mem
 chmod +x /usr/bin/speedtest
 chmod +x /usr/bin/benchmark
-chmod +x /usr/bin/banned
-chmod +x /usr/bin/unbanned
+chmod +x /usr/bin/banned-user
+chmod +x /usr/bin/unbanned-user
 echo "0 0 * * * root /usr/bin/user-expire" > /etc/cron.d/user-expire
 echo "0 */12 * * * root /sbin/reboot" > /etc/cron.d/reboot
 echo "* * * * * service dropbear restart" > /etc/cron.d/dropbear
