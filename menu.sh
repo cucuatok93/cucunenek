@@ -281,14 +281,14 @@ User Sudah Boleh Multi Login Lagi!!!" | boxes -d boy | lolcat
 	"Banned User")
 	clear
 	banned-user
-	break
+	exit
 	;;
 	
 	24)
 	"Unbanned User")
 	clear
 	unbanned-user
-	break
+	exit
 	;;
 	
 	25)
