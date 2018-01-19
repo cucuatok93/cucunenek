@@ -273,8 +273,8 @@ wget -O /usr/bin/user-limit $source/user-limit.sh
 wget -O /usr/bin/ps-mem $source/ps_mem.py
 wget -O /usr/bin/speedtest $source/speedtest_cli.py
 wget -O /usr/bin/benchmark $source/benchmark.sh
-wget -O /usr/bin/banned-user "https://raw.githubusercontent.com/cucuatok93/cucunenek/master/banned-user.sh"
-wget -O /usr/bin/unbanned-user "https://raw.githubusercontent.com/cucuatok93/cucunenek/master/unbanned-user.sh"
+wget -O /usr/bin/banned-user $source/banned-user.sh
+wget -O /usr/bin/unbanned-user $source/unbanned-user.sh
 
 chmod +x /usr/bin/menu
 chmod +x /usr/bin/user-add
