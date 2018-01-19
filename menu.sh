@@ -24,7 +24,7 @@ do
 	clear
     echo ""
 	echo -e "\e[0;36m------------------- Welcome CuCu_AtoK Autoscript -------------------\e[0;0m"| lolcat
-	echo -e "\e[0;31m                      Your Server IP: $MYIP "| lolcat
+	echo -e "\e[0;31m                      Your Server - IP: $MYIP "| lolcat
     echo ""
 	cname=$( awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo )
 	cores=$( awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo )
@@ -38,7 +38,7 @@ do
 	echo -e "\e[0;33mTotal amount of ram   : \e[32m $tram MB"| lolcat
 	echo -e "\e[0;33mTotal amount of swap  : \e[32m $swap MB"| lolcat
 	echo -e "\e[0;33mSystem uptime         :\e[32m$up"
-	echo "                       Server: $MYIP"| lolcat
+	echo "                       Server - IP: $MYIP "| lolcat
 date +"                        %A, %d-%m-%Y"| lolcat
 date +"                           %H:%M:%S %Z"| lolcat
     echo ""
@@ -72,7 +72,7 @@ date +"                           %H:%M:%S %Z"| lolcat
      echo -e "\e[0;35m24)\e[0m User Unbanned Multilogin                (unbanned user)"
 	echo -e "\e[0;35m25)\e[0m Exit                                     (Back)"
 	echo ""
-	read -p "Select an option from [1-21] than press ENTER: " option1| lolcat
+	read -p "Select an option from [1-25] than press ENTER: " option1| lolcat
 	case $option1 in
 		1)
 		clear
