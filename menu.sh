@@ -278,7 +278,6 @@ User Sudah Boleh Multi Login Lagi!!!" | boxes -d boy | lolcat
 	;;
 	
 	23)
-	
 	"Banned User")
 	clear
 	banned-user
