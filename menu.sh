@@ -68,7 +68,7 @@ date +"                           %H:%M:%S %Z"| lolcat
     echo -e "\e[0;35m20)\e[0m Reboot Server                            (reboot)"
     echo -e "\e[0;35m21)\e[0m (ON) Auto Kill Multi Login               (on autokill)"
     echo -e "\e[0;35m22)\e[0m (OFF) Auto Kill Multi Login              (off autokill)"
-    echo -e "\e[0;35m23)\e[0m User Banned Multilogin                   (banned user)"
+    echo -e "\e[0;35m23)\e[0m User Banned Multilogin                    (banned user)"
      echo -e "\e[0;35m24)\e[0m User Unbanned Multilogin                (unbanned user)"
 	echo -e "\e[0;35m25)\e[0m Exit                                     (Back)"
 	echo ""
