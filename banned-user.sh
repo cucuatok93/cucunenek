@@ -15,9 +15,9 @@ fi
 #MYIP=$(wget -qO- ipv4.icanhazip.com)
 
 
-echo "------- ---------- BANNED AKUN SSH --------------------"
+echo "----------------- BANNED AKUN SSH --------------------"| lolcat
 
-	echo "         DEVELOPED BY CUCUATOK (+60175835809)            "
+	echo "         DEVELOPED BY CUCUATOK (+60175835809) | lolcat           "
 echo ""
 
 # begin of user-list
@@ -48,7 +48,7 @@ if [ $? -eq 0 ]; then
 		echo " User : $username" >> /root/banneduser.txt
 		passwd -l $username
 		echo ""
-		echo "Akun [$username] Sudah dibanned!"
+		echo "Akun [$username] Sudah dibanned!"| lolcat
 	else
 		echo ""
 		echo "Banned akun [$username] dibatalkan!"
