@@ -18,7 +18,7 @@ fi
 # go to root
 cd
 
-echo "         UNBANNED USER ACCOUNT           "
+echo "         UNBANNED USER ACCOUNT           "| lolcat
 echo ""
 
 cat /root/banneduser.txt
@@ -37,7 +37,7 @@ if [ $? -eq 0 ]; then
 		sed -i /^$/d /root/banneduser.txt
 		passwd -u $username
 		echo ""
-		echo "Account [$username] successfull unbanned!"
+		echo "Account [$username] successfull unbanned!"| lolcat
 	else
 		echo ""
 		echo "Unbanned account [$username] cancelled!"
