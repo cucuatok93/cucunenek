@@ -70,6 +70,7 @@ date +"                           %H:%M:%S %Z"| lolcat
     echo -e "\e[0;35m22)\e[0m (OFF) Auto Kill Multi Login              (off autokill)"
     echo -e "\e[0;35m23)\e[0m User Banned Multilogin                   (banned user)"
      echo -e "\e[0;35m24)\e[0m User Unbanned Multilogin                 (unbanned user)"
+     echo -e "\e[0;35m22)\e[0m clearcache vps                          (Clear Vps)"
 	echo -e "\e[0;35m25)\e[0m Exit                                     (Back)"
 	echo ""
 	read -p "Select an option from [1-25] than press ENTER: " option1
