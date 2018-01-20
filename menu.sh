@@ -291,7 +291,8 @@ User Sudah Boleh Multi Login Lagi!!!" | boxes -d boy | lolcat
 	;;
 	
 	25)
-	"Clear Cache Ram")
+	
+	Clear Cache Ram
 	clear
 	echo "---------------------------------------------"
 	echo "Before..." | lolcat
@@ -311,6 +312,7 @@ User Sudah Boleh Multi Login Lagi!!!" | boxes -d boy | lolcat
 	echo "Success..!!!Cache ram anda sudah di bersihkan." | boxes -d boy | lolcat
         echo ""
 	break
+	;;
 	
 	26)
 		clear
