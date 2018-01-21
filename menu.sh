@@ -23,6 +23,15 @@ do
 
 	clear
     echo ""
+                                                        {~._.~}| lolcat
+                                                         ( Y )| lolcat
+                                                        ()~*~() | lolcat  
+                                                        (_)-(_) | lolcat  
+                                      _______  _________  __  ___ __________  __ __| lolcat
+                                     / ___/ / / / ___/ / / / / _ /_  __/ __ \/ //_/| lolcat
+                                    / /__/ /_/ / /__/ /_/ / / __ |/ / / /_/ / ,<| lolcat
+                                    \___/\____/\___/\____/ /_/ |_/_/  \____/_/|_|| lolcat
+
 	echo -e "\e[0;36m------------------- Welcome CuCu_AtoK Autoscript -------------------\e[0;0m"| lolcat
 	echo -e "\e[0;31m                      Your Server - IP: $MYIP "| lolcat
     echo ""
@@ -70,7 +79,7 @@ date +"                           %H:%M:%S %Z"| lolcat
     echo -e "\e[0;35m22)\e[0m (OFF) Auto Kill Multi Login              (off autokill)"
     echo -e "\e[0;35m23)\e[0m User Banned Multilogin                   (banned user)"
      echo -e "\e[0;35m24)\e[0m User Unbanned Multilogin                 (unbanned user)"
-     echo -e "\e[0;35m25)\e[0m clearcache vps                          (Clear Vps)"
+     echo -e "\e[0;35m25)\e[0m clearcache vps                           (Clear Vps)"
 	echo -e "\e[0;35m26)\e[0m Exit                                     (Back)"
 	echo ""
 	read -p "Select an option from [1-25] than press ENTER: " option1
