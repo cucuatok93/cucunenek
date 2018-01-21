@@ -23,14 +23,14 @@ do
 
 	clear
     echo ""
-                                                        {~._.~}| lolcat
-                                                         ( Y )| lolcat
-                                                        ()~*~() | lolcat  
-                                                        (_)-(_) | lolcat  
-                                      _______  _________  __  ___ __________  __ __| lolcat
-                                     / ___/ / / / ___/ / / / / _ /_  __/ __ \/ //_/| lolcat
-                                    / /__/ /_/ / /__/ /_/ / / __ |/ / / /_/ / ,<| lolcat
-                                    \___/\____/\___/\____/ /_/ |_/_/  \____/_/|_|| lolcat
+  echo"                                                  {~._.~}"| lolcat
+  echo "                                                  ( Y )"| lolcat
+   echo "                                                ()~*~()" | lolcat  
+   echo "                                                (_)-(_)" | lolcat  
+  echo "                               _______  _________  __  ___ __________  __ __"| lolcat
+echo "                                / ___/ / / / ___/ / / / / _ /_  __/ __ \/ //_/"| lolcat
+echo "                               / /__/ /_/ / /__/ /_/ / / __ |/ / / /_/ / ,<"| lolcat
+ echo "                              \___/\____/\___/\____/ /_/ |_/_/  \____/_/|_|"| lolcat
 
 	echo -e "\e[0;36m------------------- Welcome CuCu_AtoK Autoscript -------------------\e[0;0m"| lolcat
 	echo -e "\e[0;31m                      Your Server - IP: $MYIP "| lolcat
