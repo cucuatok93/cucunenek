@@ -17,7 +17,7 @@ fi
 
 echo "----------------- BANNED AKUN SSH --------------------"| lolcat
 
-	echo "         DEVELOPED BY CUCUATOK (+60175835809)" | lolcat           "
+	echo "         DEVELOPED BY CUCUATOK (+60175835809)           "| lolcat
 echo ""
 
 # begin of user-list
