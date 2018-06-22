@@ -167,11 +167,14 @@ echo; echo 'Installation has completed.'
 echo 'Config file is at /usr/local/ddos/ddos.conf'
 echo 'Please send in your comments and/or suggestions to Cucu Atok Autoscript'
 source="https://raw.githubusercontent.com/cucuatok93/cucunenek/master"
+
 # squid3
 apt-get -y install squid3
-wget -O /etc/squid3/squid.conf "$source/squid.conf"
-sed -i "s/ipserver/$myip/g" /etc/squid3/squid.conf
+wget -O /etc/squid3/squid.conf "https://raw.githubusercontent.com/cucuatok93/cucuatoknenek/master/squid3.conf"
+sed -i $MYIP2 /etc/squid3/squid.conf;
+service squid3 restart
 
+# nginx
 wget -O /etc/nginx/nginx.conf "$source/nginx.conf"
 echo "<?php phpinfo(); ?>" > /home/vps/public_html/info.php
 wget -O /etc/nginx/conf.d/vps.conf "$source/vps.conf"
@@ -188,6 +191,7 @@ wget -O /etc/iptables.up.rules "$source/iptables.up.rules"
 sed -i '$ i\iptables-restore < /etc/iptables.up.rules' /etc/rc.local
 sed -i "s/ipserver/$myip/g" /etc/iptables.up.rules
 iptables-restore < /etc/iptables.up.rules
+
 # etc
 wget -O /home/vps/public_html/client.ovpn "$source/client.ovpn"
 sed -i "s/ipserver/$myip/g" /home/vps/public_html/client.ovpn;cd
