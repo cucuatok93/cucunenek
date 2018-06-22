@@ -170,9 +170,8 @@ source="https://raw.githubusercontent.com/cucuatok93/cucunenek/master"
 
 # squid3
 apt-get -y install squid3
-wget -O /etc/squid3/squid.conf "https://raw.githubusercontent.com/cucuatok93/cucuatoknenek/master/squid3.conf"
-sed -i $MYIP2 /etc/squid3/squid.conf;
-service squid3 restart
+wget -O /etc/squid3/squid.conf "https://raw.githubusercontent.com/cucuatok93/cucunenek/master/squid.conf"
+sed -i "s/ipserver/$myip/g" /etc/squid3/squid.conf
 
 # nginx
 wget -O /etc/nginx/nginx.conf "$source/nginx.conf"
